@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <header>
               <div>
-                  <img src="Kasa\public\LOGO-header.png" alt="logo kasa header" />
+                  <img src='../logo/LOGOheader.png' alt="logo kasa header" />
               </div>
               <nav>
                   <ul>
@@ -16,10 +16,8 @@ const Header = () => {
                   </ul>
               </nav>
             </header>
-        
-            <main>
-              <Outlet />
-            </main>
+
+           
         </>
     )
   }

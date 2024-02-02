@@ -2,13 +2,16 @@
 header {
     display: flex;
     max-width: 1240px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 50px 30px 50px;
+    
 
     nav ul {
         display: flex;
         justify-content: space-between;
+        gap: 25px;
         
         li {
             list-style: none;
