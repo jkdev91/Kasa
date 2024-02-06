@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
 
-const Card = () => {
+const Card = ({id, cover, title}) => {
 
     return (
         <div className="card-appartment">
+
+            {/* <p>{title}</p> */}
             <Link to ={`appartments/${id}`} >
-                <img src={cover} alt="" />
+                <img src={cover} alt={'kasa-' + title} />
                 <h3>{title}</h3>
 
             </Link>    

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     border-radius: 20px;
     position: relative;
+    margin-bottom: 20px;
 
     img {
         width: 100%;
@@ -20,7 +21,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 40px;
 
 
         color: white;
