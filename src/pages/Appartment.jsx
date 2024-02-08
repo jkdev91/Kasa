@@ -1,24 +1,75 @@
 import {useParams} from "react-router-dom";
+import { getAllAppartments } from "../services/appartmentService";
+import Datas from "../assets/appartmentData.json";
+import Tag from "../components/Tag";
+import { useEffect } from "react";
+import Rating from "../components/rating";
 
 const Appartment = () => {
 
-    const {id} = useParams();
+  
+  
+  const {id} = useParams();
+  // console.log(id)
+  const appartmentcurrentdata = Datas.find(data => data.id === id)
+  console.log(appartmentcurrentdata)
 
-    console.log(id);
+  // useEffect( () => [id, appartmentcurrentdata])
 
-    // TODO with this id get the correct appartment from the JSON list of appartments
+  const name = appartmentcurrentdata.host.name.split(' ')
+  const rating = appartmentcurrentdata.rating
 
-    return (
-        <div>
-        <h2>fiche Appartment</h2>
-        <p>Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. A nam optio voluptatem beatae
-            non corrupti, voluptate neque, possimus veniam quod 
-            excepturi fuga soluta cumque eos amet! Quisquam officiis minus vitae?
-        </p>
-        </div>
+
+  // TODO with this id get the correct appartment from the JSON list of appartments
+  return (
+    
+        <div className="appartmentSheet">
+          {/* carrousel */}
+          <div className="appartmentSheet-content">
+            <div className="appartmentSheet-content__infos">
+              <h1>{appartmentcurrentdata.title}</h1>
+              <p>{appartmentcurrentdata.location}</p>
+              <div className="tags">
+                {appartmentcurrentdata.tags.map((tag, index) => <Tag key= {index} tag= {tag} />
+
+                )}
+              </div>
+            </div>
+
+            <div className="appartmentSheet-content__host">
+              <div className="host-infos">
+                <div className="host-infos__name">
+                  <span>{name[0]}</span>
+                  <span>{name[1]}</span>
+                </div>
+                <img src= {appartmentcurrentdata.host.picture} alt= "photo de l'host"/>
+              </div>  
+
+              <div className="host-rating">
+                {/* <Rating rating={rating} /> */}
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+              
+            </div>
+
+          </div>
+        
+        {/* {getAllAppartments().map((appartment) => {
+        return(
+          <p key={appartment.id}>{appartment.title}</p>)}  
+          
+        )} */}
+      
+       </div>
     )
+  
   }
+  
+  
   
   export default Appartment
 

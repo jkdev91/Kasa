@@ -1,0 +1,76 @@
+@use './variables.scss' as *;
+
+
+.appartmentSheet {
+    margin-bottom: 20px;
+}
+
+.appartmentSheet-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+    
+
+
+.appartmentSheet-content__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    h1 {
+        color: $background-color-card;
+    }
+
+    .tags {
+        display: flex;
+        gap: 15px;
+    }
+
+    button {
+        width: 100px;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        background-color: $background-color-card;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+}
+
+.appartmentSheet-content__host {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.host-infos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $background-color-card;
+
+    .host-infos__name {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    img{
+        width: 70px;
+        height: 70px;
+        // box-sizing: content-box;
+        object-fit: cover;
+        color: white;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+.host-rating {
+    font-size: 35px;
+}
