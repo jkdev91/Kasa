@@ -1,0 +1,39 @@
+
+@use './variables.scss' as *;
+
+
+.accordion-item {
+    width: 50%;
+
+    h3 {
+        display: flex;
+        justify-content: space-between;
+        background-color: $background-color-card;
+        color: white;
+        cursor: pointer;
+
+        .arrow {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .arrow-up {
+            transform: rotate(0);
+        }
+
+        .arrow-down {
+            transform: rotate(180deg);
+        }
+    }
+
+    .accordion-content {
+        // display: flex;
+        visibility: visible;
+    }
+
+    .accordion-content_hidden {
+        visibility: hidden;
+
+    }
+
+
+}

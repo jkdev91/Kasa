@@ -4,6 +4,7 @@ import Datas from "../assets/appartmentData.json";
 import Tag from "../components/Tag";
 import { useEffect } from "react";
 import Rating from "../components/rating";
+import Accordion from "../components/Accordion";
 
 const Appartment = () => {
 
@@ -18,6 +19,8 @@ const Appartment = () => {
 
   const name = appartmentcurrentdata.host.name.split(' ')
   const rating = appartmentcurrentdata.rating
+  const description = appartmentcurrentdata.description
+  const equipments = appartmentcurrentdata.equipments
 
 
   // TODO with this id get the correct appartment from the JSON list of appartments
@@ -46,15 +49,23 @@ const Appartment = () => {
               </div>  
 
               <div className="host-rating">
-                {/* <Rating rating={rating} /> */}
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
+                <Rating rating={rating} />
               </div>
               
             </div>
+
+          </div>
+
+          <div className="accordion-appartement">
+            
+            <Accordion title={'Description'} content={description}/>
+
+            
+            <Accordion title={'Equipement'} content={equipments}/>
+
+        
+
+
 
           </div>
         

@@ -8,6 +8,7 @@
 .appartmentSheet-content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 
 }
     
@@ -28,7 +29,7 @@
     }
 
     button {
-        width: 100px;
+        // width: 200px;
         color: white;
         border-radius: 25px;
         border: none;
@@ -48,6 +49,7 @@
 
 .host-infos {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
     color: $background-color-card;
@@ -59,8 +61,8 @@
     }
 
     img{
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         // box-sizing: content-box;
         object-fit: cover;
         color: white;
@@ -72,5 +74,13 @@
 
 
 .host-rating {
+    display: flex;
+    gap: 10px;
     font-size: 35px;
+}
+
+.accordion-appartement {
+    display: flex;
+    gap: 50px
+    
 }

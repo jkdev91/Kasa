@@ -1,6 +1,6 @@
 
-import redstar from '../assets/'
-import greystar from '../star-inactive.png';
+import redstar from '../assets/star-active.png';
+import greystar from '../assets/star-inactive.png';
 
 console.log(greystar)
 
@@ -8,11 +8,11 @@ const Rating = ({rating}) => {
 
     return (
         <>
-        {[...Array(5)].map((index) => {
+        {[...Array(5)].map((star, index) => {
             const ratingvalue = index + 1;
 
             return(
-            <img src={rating >= ratingvalue ? redstar : greystar  }  alt="star" />
+            <img key= {index} src={rating >= ratingvalue ? redstar : greystar}  alt="star" />
             )
         })
         }
