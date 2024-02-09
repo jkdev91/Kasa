@@ -1,9 +1,12 @@
 
 // import { getAllAppartments } from "../services/appartmentService";
-import Datas from "../assets/appartmentData.json"
 import Card from "./card";
 
+import { getAllAppartments } from "../services/appartmentService";
+
 const Gallery = () => {
+
+  const appartments = getAllAppartments();
 
   return (
       <div className="card-container">
@@ -16,7 +19,7 @@ const Gallery = () => {
         )
       }
       )} */}
-        {Datas.map(data => {
+        {appartments.map(data => {
           return (
 
         <Card key = {data.id} id= {data.id} cover = {data.cover} title = {data.title}/>

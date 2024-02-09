@@ -16,9 +16,12 @@ header {
         li {
             list-style: none;
             text-decoration: none;
-
             
         }
     }
 
+}
+
+.active {
+    text-decoration: underline;
 }

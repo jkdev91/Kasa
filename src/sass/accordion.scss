@@ -8,8 +8,10 @@
     h3 {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background-color: $background-color-card;
         color: white;
+        padding: 5px;
         cursor: pointer;
 
         .arrow {
@@ -28,10 +30,14 @@
     .accordion-content {
         // display: flex;
         visibility: visible;
+        // transition: visibility 6s ease-in-out,  
+        //             height 2s ease-in;
+
     }
 
     .accordion-content_hidden {
         visibility: hidden;
+        height: 0;
 
     }
 

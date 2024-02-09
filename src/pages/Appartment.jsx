@@ -1,18 +1,18 @@
 import {useParams} from "react-router-dom";
 import { getAllAppartments } from "../services/appartmentService";
-import Datas from "../assets/appartmentData.json";
+// TODO look at SOLID principles + ETC (easy to change) principle
 import Tag from "../components/Tag";
 import { useEffect } from "react";
 import Rating from "../components/rating";
 import Accordion from "../components/Accordion";
 
-const Appartment = () => {
+import { getAppartmentById } from "../services/appartmentService";
 
-  
+const Appartment = () => {
   
   const {id} = useParams();
   // console.log(id)
-  const appartmentcurrentdata = Datas.find(data => data.id === id)
+  const appartmentcurrentdata = getAppartmentById(id)
   console.log(appartmentcurrentdata)
 
   // useEffect( () => [id, appartmentcurrentdata])
@@ -60,12 +60,7 @@ const Appartment = () => {
             
             <Accordion title={'Description'} content={description}/>
 
-            
             <Accordion title={'Equipement'} content={equipments}/>
-
-        
-
-
 
           </div>
         
