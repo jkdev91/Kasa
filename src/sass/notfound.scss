@@ -1,0 +1,28 @@
+
+@use './variables.scss' as *;
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.error-title {
+    font-size: 288px;
+    font-weight: 700;
+    color: $background-color-card;
+}
+
+.error-message {
+    font-size: 36px;
+    font-weight: 500;
+    color: $background-color-card;
+}
+
+.error-returnLink {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+}
