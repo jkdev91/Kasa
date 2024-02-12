@@ -1,4 +1,5 @@
 import appartmentsData from "../assets/appartmentData.json";
+import aboutDatas from "../assets/aboutData.json";
 
 // this service is responsible for getting appartment data
 export const getAllAppartments = () => appartmentsData;
@@ -17,3 +18,8 @@ export const getAppartmentByIdAsync = async (id, isFailure = false) => {
     if (isFailure) throw new Error("Failed to fetch data");
     return appartmentsData.find((appartment) => appartment.id === id);
 }
+
+
+// responsible for getting about datas
+export const getAboutDatas = () => aboutDatas;
+export const getAboutDatasbyId = (id) => aboutDatas.find((data) => data.id);

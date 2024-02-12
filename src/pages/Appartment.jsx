@@ -13,6 +13,7 @@ const Appartment = () => {
   const {id} = useParams();
   // console.log(id)
   const appartmentcurrentdata = getAppartmentById(id)
+  const appartall = getAllAppartments()
   console.log(appartmentcurrentdata)
 
   // useEffect( () => [id, appartmentcurrentdata])

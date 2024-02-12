@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <>
-      <Banner />
+      <Banner imgUrl = {"../images/Image source 1.png"} />
 
       <Gallery />
 

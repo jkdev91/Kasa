@@ -1,17 +1,34 @@
 
+import Accordion from "../components/Accordion";
+import { getAboutDatas } from "../services/appartmentService";
+import Banner from "../components/Banner";
 
 const About = () => {
 
-    return (
-      <>
-        <h2>A propos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Facere quam voluptatibus ratione voluptatem dicta deleniti, 
-           suscipit pariatur, debitis culpa quos numquam possimus quo illo, 
-           repudiandae voluptates. Atque ullam numquam in.
-        </p>
-      </>
+
+  const aboutData = getAboutDatas() 
+
+  
+  return (
+    <>
+    <Banner imgUrl = {"../images/Image source 2.png"} />
+
+    {aboutData.map(data => {
+      return (
+        <Accordion style={{width: '100 %;'}} key={data.id} title={data.title} content={data.content}/>  
+
+      )
+    })}
+
+  
+
+
+    </>
     )
-  }
+  
+
+
+}
+
   
   export default About
