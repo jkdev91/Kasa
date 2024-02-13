@@ -11,7 +11,7 @@ const Accordion = ({title, content}) => {
                 <h3 className="accordion-title" onClick={() =>setToggle(!toggle)}>
                     {title}
                     <img 
-                        className= {toggle ? 'arrow arrow-up' : 'arrow arrow-down'} 
+                        className= {toggle ? 'collapse arrow-up' : 'collapse arrow-down'} 
                         src= '..\arrow_up.png'
                         alt="arrow to show content" 
                     />

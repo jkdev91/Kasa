@@ -22,4 +22,3 @@ export const getAppartmentByIdAsync = async (id, isFailure = false) => {
 
 // responsible for getting about datas
 export const getAboutDatas = () => aboutDatas;
-export const getAboutDatasbyId = (id) => aboutDatas.find((data) => data.id);

@@ -7,6 +7,7 @@ import Rating from "../components/rating";
 import Accordion from "../components/Accordion";
 
 import { getAppartmentById } from "../services/appartmentService";
+import Carousel from "../components/Carousel";
 
 const Appartment = () => {
   
@@ -15,20 +16,22 @@ const Appartment = () => {
   const appartmentcurrentdata = getAppartmentById(id)
   const appartall = getAllAppartments()
   console.log(appartmentcurrentdata)
-
+  
+  
   // useEffect( () => [id, appartmentcurrentdata])
 
   const name = appartmentcurrentdata.host.name.split(' ')
   const rating = appartmentcurrentdata.rating
   const description = appartmentcurrentdata.description
   const equipments = appartmentcurrentdata.equipments
+  const pictures = appartmentcurrentdata.pictures
 
 
   // TODO with this id get the correct appartment from the JSON list of appartments
   return (
-    
+    <>
+          <Carousel data = {pictures}/>
         <div className="appartmentSheet">
-          {/* carrousel */}
           <div className="appartmentSheet-content">
             <div className="appartmentSheet-content__infos">
               <h1>{appartmentcurrentdata.title}</h1>
@@ -72,8 +75,8 @@ const Appartment = () => {
         )} */}
       
        </div>
+    </>
     )
-  
   }
   
   
