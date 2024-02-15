@@ -16,17 +16,28 @@ const Carousel = ({data}) => {
         setSlide(slide === 0 ? data.length - 1 : slide - 1);
     };
 
+
     return (
 
         <div className="carousel">
-            <img src= {arrowBack} alt="arrow slide precedent" className='arrow arrow-left' onClick={prevSlide}/>
             
             {data.map((item, index) =>{
                 return <img src= {item} alt= {`picture ${index+1}`} key={index} className= { slide === index ? "slide" : "slide slide-hidden"} />
             })}
-            {/* <span className='arrow arrow-right'>{arrowFoward}</span> */}
-            <img src= {arrowFoward} alt="arrow slide next" className='arrow arrow-right' onClick={nextSlide}/>
-            <p className='indicator'>{slide+1} / {data.length}</p>
+
+                {/* afficher arrowBack, arrowFoward and indicator number if data.length is superior at 1*/} 
+            {
+                data.length > 1 && (
+                    <>
+                        <img src= {arrowBack} alt="arrow slide precedent" className='arrow arrow-left' onClick={prevSlide}/>
+                        <img src= {arrowFoward} alt="arrow slide next" className='arrow arrow-right' onClick={nextSlide}/>
+
+                        <p className='indicator'>{slide+1} / {data.length}</p>
+
+                    </>
+                )
+                
+            }
     
         </div>
     

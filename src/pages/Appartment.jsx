@@ -7,6 +7,7 @@ import Rating from "../components/rating";
 import Accordion from "../components/Accordion";
 
 import { getAppartmentById } from "../services/appartmentService";
+import { getAppartmentByIdAsync } from "../services/appartmentService";
 import Carousel from "../components/Carousel";
 
 const Appartment = () => {
