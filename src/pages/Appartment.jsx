@@ -7,7 +7,7 @@ import Rating from "../components/rating";
 import Accordion from "../components/Accordion";
 
 import { getAppartmentById } from "../services/appartmentService";
-import { getAppartmentByIdAsync } from "../services/appartmentService";
+import NotFound from "./NotFound";
 import Carousel from "../components/Carousel";
 
 const Appartment = () => {
@@ -16,10 +16,13 @@ const Appartment = () => {
   // console.log(id)
   const appartmentcurrentdata = getAppartmentById(id)
   const appartall = getAllAppartments()
-  console.log(appartall)
-  console.log(appartmentcurrentdata.id)
-  
 
+  console.log(appartall)
+  console.log(appartmentcurrentdata)
+  
+  if (!appartmentcurrentdata) {
+    return <NotFound />
+  }
   
   
   // useEffect( () => [id, appartmentcurrentdata])
