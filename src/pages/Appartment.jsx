@@ -16,7 +16,10 @@ const Appartment = () => {
   // console.log(id)
   const appartmentcurrentdata = getAppartmentById(id)
   const appartall = getAllAppartments()
-  console.log(appartmentcurrentdata)
+  console.log(appartall)
+  console.log(appartmentcurrentdata.id)
+  
+
   
   
   // useEffect( () => [id, appartmentcurrentdata])
@@ -28,19 +31,19 @@ const Appartment = () => {
   const pictures = appartmentcurrentdata.pictures
 
 
+
   // TODO with this id get the correct appartment from the JSON list of appartments
   return (
     <>
-          <Carousel data = {pictures}/>
+        <Carousel data = {pictures}/>
+
         <div className="appartmentSheet">
           <div className="appartmentSheet-content">
             <div className="appartmentSheet-content__infos">
               <h1>{appartmentcurrentdata.title}</h1>
               <p>{appartmentcurrentdata.location}</p>
               <div className="tags">
-                {appartmentcurrentdata.tags.map((tag, index) => <Tag key= {index} tag= {tag} />
-
-                )}
+                {appartmentcurrentdata.tags.map((tag, index) => <Tag key= {index} tag= {tag} />)}
               </div>
             </div>
 
@@ -62,18 +65,15 @@ const Appartment = () => {
           </div>
 
           <div className="accordion-appartement">
-            
-            <Accordion title={'Description'} content={description}/>
+            <div className="accordion-appartment_items">
+              <Accordion title={'Description'} content={description}/>
+            </div>
+            <div className="accordion-appartment_items">
+              <Accordion title={'Equipement'} content={equipments}/>
+            </div>
 
-            <Accordion title={'Equipement'} content={equipments}/>
 
           </div>
-        
-        {/* {getAllAppartments().map((appartment) => {
-        return(
-          <p key={appartment.id}>{appartment.title}</p>)}  
-          
-        )} */}
       
        </div>
     </>

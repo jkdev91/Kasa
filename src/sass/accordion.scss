@@ -3,15 +3,19 @@
 
 
 .accordion-item {
-    width: 50%;
+    // width: 50%;
 
-    h3 {
+    .accordion-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: $background-color-card;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
         color: white;
         padding: 5px;
+        border-radius: 5px;
         cursor: pointer;
 
         .collapse {
@@ -32,12 +36,18 @@
         visibility: visible;
         // transition: visibility 6s ease-in-out,  
         //             height 2s ease-in;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        background-color: $background-color-accordion;
+        padding: 10px;
+        border-radius: 5px;
 
     }
 
     .accordion-content_hidden {
         visibility: hidden;
-        // height: 0;
+        height: 0;
 
     }
 

@@ -13,13 +13,19 @@ const About = () => {
     <>
     <Banner imgUrl = {"../images/Image source 2.png"} />
 
+    <div className="accordion-container">
     {aboutData.map(data => {
       return (
-        <Accordion style={{width: '100 %;'}} key={data.id} title={data.title} content={data.content}/>  
+        <div key={data.id} className="accordion-container_bloc">
+          <Accordion title={data.title} content={data.content}/>  
 
-      )
-    })}
+        </div>
 
+          
+          )
+        })}
+
+    </div>
   
 
 

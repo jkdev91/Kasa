@@ -1,11 +1,27 @@
 
 footer {
+    // margin-top: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     height: 209px;
     color: rgba(255, 255, 255, 1);
     background: rgba(0, 0, 0, 1);
+
+    img {
+       height: 39px;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 500;
+
+        @media screen and (max-width: 700px) {
+            font-size: 12px;
+            
+        }
+    }
     
 }

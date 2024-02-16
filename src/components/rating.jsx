@@ -2,7 +2,6 @@
 import redstar from '../assets/star-active.png';
 import greystar from '../assets/star-inactive.png';
 
-console.log(greystar)
 
 const Rating = ({rating}) => {
 

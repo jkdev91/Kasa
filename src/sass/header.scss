@@ -1,18 +1,36 @@
 
 header {
     display: flex;
-    // max-width: 1240px
     height: 80px;
     justify-content: space-between;
     align-items: center;
     margin: 0 100px 30px 100px;
+
+        @media screen and (max-width: 700px) {
+            margin: 30px 10px;
+        
+        }
+
+
+    img {
+        @media screen and (max-width: 700px) {
+            height: 47px;
+            
+        }
+    }
     
 
     nav ul {
         display: flex;
         justify-content: space-between;
         font-size: 24px;
+        font-weight: 500;
         gap: 25px;
+
+        @media screen and (max-width: 700px) {
+            font-size: 12px;
+            
+        }
         
         li {
             list-style: none;

@@ -17,14 +17,22 @@
 .appartmentSheet-content__infos {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     
     h1 {
+        font-size: 36px;
+        font-weight: 500;
         color: $background-color-card;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .tags {
         display: flex;
+        font-weight: 700;
         gap: 15px;
     }
 
@@ -34,8 +42,9 @@
         border-radius: 25px;
         border: none;
         background-color: $background-color-card;
-        font-size: 15px;
-        padding: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 15px;
     }
 
 }
@@ -43,15 +52,16 @@
 .appartmentSheet-content__host {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-around;
     
 }
 
 .host-infos {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
     color: $background-color-card;
 
     .host-infos__name {
@@ -61,8 +71,8 @@
     }
 
     img{
-        width: 80px;
-        height: 80px;
+        width: 64px;
+        height: 64px;
         // box-sizing: content-box;
         object-fit: cover;
         color: white;
@@ -81,6 +91,10 @@
 
 .accordion-appartement {
     display: flex;
-    gap: 50px
+    gap: 50px;
+    
+    .accordion-appartment_items {
+        width: 50%;
+    }
     
 }

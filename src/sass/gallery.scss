@@ -7,12 +7,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    // grid-template-columns: repeat(auto-fill, 200px);
-    gap: 69px;
-    // height: 200px;
+    
+    gap: 50px;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: $background-color-grid;
+    background-color: $background-color-gallery;
     cursor: pointer;
 }

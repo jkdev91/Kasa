@@ -13,16 +13,33 @@
     font-size: 288px;
     font-weight: 700;
     color: $background-color-card;
+
+    @media screen and (max-width: 700px) {
+        font-size: 96px;
+        
+    }
 }
 
 .error-message {
     font-size: 36px;
     font-weight: 500;
     color: $background-color-card;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 700px) {
+        font-size: 18px;
+        
+    }
+
 }
 
 .error-returnLink {
     font-size: 18px;
     font-weight: 500;
     text-decoration: underline;
+
+    @media screen and (max-width: 700px) {
+        font-size: 14px;
+        
+    }
 }
