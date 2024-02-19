@@ -10,12 +10,15 @@ a {
     color: black;
 }
 
+// .root {
+//     // min-height: 100vh;
+// }
 
 .mainbody {
     margin-inline: 100px;
 
     @media screen and (max-width: 700px) {
-        margin-inline: 0 ;
+        margin-inline: 10px ;
         
     }
 }

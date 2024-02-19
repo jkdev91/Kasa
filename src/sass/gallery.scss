@@ -13,4 +13,11 @@
     padding: 20px;
     background-color: $background-color-gallery;
     cursor: pointer;
+
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        gap: 30px;
+        
+    }
 }

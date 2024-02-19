@@ -18,6 +18,10 @@
         border-radius: 5px;
         cursor: pointer;
 
+        @media screen and (max-width: 700px) {
+            font-size: 18px;  
+        }
+
         .collapse {
             transition: all 0.3s ease-in-out;
         }
@@ -34,8 +38,6 @@
     .accordion-content {
         // display: flex;
         visibility: visible;
-        // transition: visibility 6s ease-in-out,  
-        //             height 2s ease-in;
         font-size: 18px;
         font-weight: 400;
         line-height: 25px;
