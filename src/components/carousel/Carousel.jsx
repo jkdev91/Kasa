@@ -1,8 +1,8 @@
 
 import { useState } from 'react';
-import arrowBack from '../assets/arrow_back_ios-24px 1.png';
-import arrowFoward from '../assets/arrow_forward_ios-24px 1.png';
-import "../sass/carousel.scss";
+import arrowBack from '../../assets/arrow_back_ios-24px 1.png';
+import arrowFoward from '../../assets/arrow_forward_ios-24px 1.png';
+import "../carousel/carousel.scss";
 
 const Carousel = ({data}) => {
 

@@ -1,14 +1,13 @@
 import {useParams} from "react-router-dom";
 import { getAllAppartments } from "../services/appartmentService";
 // TODO look at SOLID principles + ETC (easy to change) principle
-import Tag from "../components/Tag";
-import { useEffect } from "react";
-import Rating from "../components/rating";
-import Accordion from "../components/Accordion";
+import Tag from "../components/tag/Tag";
+import Rating from "../components/rating/rating";
+import Accordion from "../components/accordion/Accordion";
 
 import { getAppartmentById } from "../services/appartmentService";
 import NotFound from "./NotFound";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/carousel/Carousel";
 
 const Appartment = () => {
   

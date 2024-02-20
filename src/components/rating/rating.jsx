@@ -1,6 +1,6 @@
 
-import redstar from '../assets/star-active.png';
-import greystar from '../assets/star-inactive.png';
+import redstar from '../../assets/star-active.png';
+import greystar from '../../assets/star-inactive.png';
 
 
 const Rating = ({rating}) => {

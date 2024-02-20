@@ -1,5 +1,5 @@
-import Banner from "../components/Banner";
-import Gallery from "../components/Gallery";
+import Banner from "../components/banner/Banner.jsx";
+import Gallery from "../components/gallery/Gallery.jsx";
 
 const Home = () => {
 

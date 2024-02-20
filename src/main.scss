@@ -1,10 +1,10 @@
-@use './sass/header.scss';
-@use './sass/banner.scss';
+@use './components/header/header.scss';
+@use './components/banner/banner.scss';
 @use './sass/root.scss';
-@use './sass/footer.scss';
-@use './sass/gallery.scss';
-@use './sass/card.scss';
+@use './components/footer/footer.scss';
+@use './components/gallery/gallery.scss';
+@use './components/card/card.scss';
 @use './sass/appartments.scss';
-@use './sass/accordion.scss';
+@use './components/accordion/accordion.scss';
 @use './sass/notfound.scss';
 @use './sass/about.scss';

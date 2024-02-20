@@ -1,7 +1,7 @@
 
-import Accordion from "../components/Accordion";
+import Accordion from "../components/accordion/Accordion";
 import { getAboutDatas } from "../services/appartmentService";
-import Banner from "../components/Banner";
+import Banner from "../components/banner/Banner";
 
 const About = () => {
 

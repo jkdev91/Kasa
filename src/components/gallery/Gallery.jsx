@@ -1,8 +1,8 @@
 
 // import { getAllAppartments } from "../services/appartmentService";
-import Card from "./card";
+import Card from "../card/card.jsx";
 
-import { getAllAppartments } from "../services/appartmentService";
+import { getAllAppartments } from "../../services/appartmentService.js";
 
 const Gallery = () => {
 
