@@ -11,7 +11,7 @@ const About = () => {
   
   return (
     <>
-    <Banner imgUrl = {"../images/Image source 2.png"} />
+    <Banner imgUrl = {"../images/Image source 2.png"} ishomepage={false}/>
 
     <div className="accordion-container">
     {aboutData.map(data => {

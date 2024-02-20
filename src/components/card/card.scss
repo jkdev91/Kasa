@@ -5,6 +5,17 @@
     height: 300px;
     position: relative;
 
+    @media screen and (max-width: 1200px) {
+        width: 29%;
+        
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 200px;
+        height: 200px;
+        
+    }
+
     @media screen and (max-width: 700px) {
         width: auto;
         

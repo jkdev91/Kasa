@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <>
-      <Banner imgUrl = {"../images/Image source 1.png"} />
+      <Banner imgUrl = {"../images/Image source 1.png"} ishomepage={true}/>
 
       <Gallery />
 
