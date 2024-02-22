@@ -12,7 +12,7 @@ import Carousel from "../components/carousel/Carousel";
 const Appartment = () => {
   
   const {id} = useParams();
-  // console.log(id)
+  console.log(id)
   const appartmentcurrentdata = getAppartmentById(id)
   const appartall = getAllAppartments()
 
